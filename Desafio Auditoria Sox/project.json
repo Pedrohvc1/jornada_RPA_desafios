@@ -1,0 +1,58 @@
+{
+  "name": "Desafio Auditoria Sox",
+  "description": "Você deverá criar um projeto RPA que que atenda o seguinte cenário:\r\n\r\nPara esse desafio deverá ser desenvolvido um robô Assistido\r\n\r\nAcessar o sistema de controle de demandas e pesquisar por uma determinada demanda/projeto:\r\n\r\nlink: https://desafiosrpa.com.br/demanda/login.html\r\nUsuário: alex\r\nSenha: desafiosrpa\r\nDemanda: 0012019\r\nCapturar as seguintes evidencias:\r\nEV001. Informação sobre o SOLICITANTE da demanda/projeto 0012019.\r\nNome do Solicitante\r\nGerencia do Solicitante\r\nData de criação da",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.1]",
+    "UiPath.System.Activities": "[22.4.1]",
+    "UiPath.UIAutomation.Activities": "[22.4.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.1.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "f2ebf5eb-b0dd-46ba-b227-1c8376bea3cd",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
