@@ -1,0 +1,496 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1243,3538" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="35">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Global" sap:VirtualizedContainerService.HintSize="480,3473" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="var_numeroDemanda" />
+      <Variable x:TypeArguments="x:String" Name="var_solicitanteNome" />
+      <Variable x:TypeArguments="x:String" Name="var_solicitanteGerencia" />
+      <Variable x:TypeArguments="x:String" Name="var_solicitanteData" />
+      <Variable x:TypeArguments="x:String" Name="var_producaoDataPromocao" />
+      <Variable x:TypeArguments="x:String" Name="var_producaoGerencia" />
+      <Variable x:TypeArguments="x:String" Name="var_producaoNome" />
+      <Variable x:TypeArguments="x:String" Name="var_producaoVersao" />
+      <Variable x:TypeArguments="x:String" Name="var_devDataTermino" />
+      <Variable x:TypeArguments="x:String" Name="var_testeDataLiberacao" />
+      <Variable x:TypeArguments="x:String" Name="var_testeDataTermino" />
+      <Variable x:TypeArguments="x:String" Name="var_aceitacaoAceitoEm" />
+      <Variable x:TypeArguments="x:String" Name="var_aceitacaoAceitoPor" />
+      <Variable x:TypeArguments="x:String" Name="var_aceitacaoData" />
+      <Variable x:TypeArguments="x:String" Name="var_aceitacaoGerencia" />
+      <Variable x:TypeArguments="x:String" Name="var_aceitacaoNome" />
+      <Variable x:TypeArguments="x:String" Name="var_testeDataInicio" />
+      <Variable x:TypeArguments="x:String" Name="var_testeGerencia" />
+      <Variable x:TypeArguments="x:String" Name="var_testeNome" />
+      <Variable x:TypeArguments="x:String" Name="var_devDataInicial" />
+      <Variable x:TypeArguments="x:String" Name="var_devGerencia" />
+      <Variable x:TypeArguments="x:String" Name="var_devNome" />
+      <Variable x:TypeArguments="x:String" Name="var_devDataLiberacao" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="438,132" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="msedge">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:KillProcess>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login Site workflow" sap:VirtualizedContainerService.HintSize="438,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Login Site.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_numeroDemanda">[var_numeroDemanda]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="438,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[var_numeroDemanda]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CreateDirectory>
+    <Sequence DisplayName="Extracao_Dados" sap:VirtualizedContainerService.HintSize="438,812" sap2010:WorkflowViewState.IdRef="Sequence_41">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extracao_Solicitante workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Extracao de Dados\Extracao_Solicitante.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_solicitanteNome">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_solicitanteNome" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_solicitanteGerencia">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_solicitanteGerencia" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_solicitanteData">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_solicitanteData" />
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extracao_Desenvolvimento workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Extracao de Dados\Extracao_Desenvolvimento.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_devNome">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_devNome" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_devGerencia">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_devGerencia" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_devDataInicial">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_devDataInicial" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_devDataTermino">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_devDataTermino" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_devDataLiberacaoTeste">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_devDataLiberacao" />
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extracao_Teste workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Extracao de Dados\Extracao_Teste.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_testeNome">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_testeNome" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_testeGerencia">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_testeGerencia" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_testeDataInicio">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_testeDataInicio" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_testeDataTermino">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_testeDataTermino" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_testeDataLiberacao">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_testeDataLiberacao" />
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extracao_Aceitacao_Hom workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Extracao de Dados\Extracao_Aceitacao_Hom.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="out_aceitacaoNome">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_aceitacaoNome" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_aceitacaoGerencia">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_aceitacaoGerencia" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_aceitacaoData">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_aceitacaoData" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_aceitacaoAceitoPor">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_aceitacaoAceitoPor" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_aceitacaoAceitoEm">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_aceitacaoAceitoEm" />
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extracao_Producao workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Extracao de Dados\Extracao_Producao.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_producaoVersao">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_producaoVersao" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_producaoNome">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_producaoNome" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_producaoGerencia">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_producaoGerencia" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_producaoDataPromocao">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="var_producaoDataPromocao" />
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="438,132" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="Auditor.exe">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:KillProcess>
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application - abrir o sistema Auditor" FileName="C:\Workspace\RPA\Desafios Jornada RPA\Desafio Auditoria Sox\App\auditor.exe" sap:VirtualizedContainerService.HintSize="438,1790" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="f8daf44d30d0c79f89d3d6e6e639eb03" Selector="&lt;wnd app='auditor.exe' ctrlname='TelaPrincipal' /&gt;">
+      <ui:OpenApplication.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="404,1644" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.RichEdit...'" EmptyField="False" sap:VirtualizedContainerService.HintSize="362,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[&quot;Evidência da Demanda: &quot; + var_numeroDemanda+ &quot;[k(enter)]&quot;]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0f210f3a-afe1-4e1f-9bea-504c20cdcd36" InformativeScreenshot="0be4b4e8d6b743e081f6a8b14c05828e" Selector="&lt;wnd ctrlname='txtEvidencias' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:TypeInto>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'WindowsForms10.RichEdit...'" sap:VirtualizedContainerService.HintSize="362,152" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd842767-49d0-466a-aa78-162a62b106f5" InformativeScreenshot="16052c517b7ec1dac0308c67409a2c6c" Selector="&lt;wnd ctrlname='txtEvidencias' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:SendHotkey>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Entrada_Solicitante workflow" sap:VirtualizedContainerService.HintSize="362,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Entrada de Dados\Entrada_Solicitante.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_solicitanteNome">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_solicitanteNome" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_solicitanteGerencia">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_solicitanteGerencia" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_solicitanteData">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_solicitanteData" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Entrada_Dev workflow" sap:VirtualizedContainerService.HintSize="362,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Entrada de Dados\Entrada_Dev.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_devNome">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_devNome" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_devGerencia">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_devGerencia" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_devDataInicial">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_devDataInicial" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_devDataTermino">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_devDataTermino" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_devDataLiberacao">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_devDataLiberacao" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Entrada_Teste workflow" sap:VirtualizedContainerService.HintSize="362,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Entrada de Dados\Entrada_Teste.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_testeNome">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_testeNome" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_testeGerencia">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_testeGerencia" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_testeDataInicio">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_testeDataInicio" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_testeDataTermino">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_testeDataTermino" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_testeDataLiberacao">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_testeDataLiberacao" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Entrada_Aceitacao_Hom workflow" sap:VirtualizedContainerService.HintSize="362,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Entrada de Dados\Entrada_Aceitacao_Hom.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_aceitacaoNomeHom">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_aceitacaoNome" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_aceitacaoGerenciaHom">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_aceitacaoGerencia" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_aceitacaoDataHom">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_aceitacaoData" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_aceitacaoAceitoPor">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_aceitacaoAceitoPor" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_aceitacaoAceitoEm">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_aceitacaoAceitoEm" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Entrada_Producao workflow" sap:VirtualizedContainerService.HintSize="362,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Entrada de Dados\Entrada_Producao.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_producaoVersao">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_producaoVersao" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_producaoNome">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_producaoNome" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_producaoGerencia">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_producaoGerencia" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_producaoDataPromocao">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_producaoDataPromocao" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_numeroDemanda">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="var_numeroDemanda" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'WindowsForms10.BUTTON.a...'" sap:VirtualizedContainerService.HintSize="362,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19d94748-98f4-4e10-999a-ef38eed9ab9e" InformativeScreenshot="ae7a21a0188790a2a9b48e8828b23cae" Selector="&lt;wnd ctrlname='btnGravar' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="362,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" SimulateType="True" Text="[&quot;Evidência_&quot; + var_numeroDemanda]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="349159ce-57af-4392-84ba-5aad48baed5b" InformativeScreenshot="3e0e7e8943c51bb8af83636f5fe39044" Selector="&lt;wnd app='auditor.exe' cls='#32770' title='Salvar como' /&gt;&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nome:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="362,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f9ba82e8-bb68-4867-b0d7-1aaf8657555a" InformativeScreenshot="eb9d885c5061ea1e36a4528e674c0b45" Selector="&lt;wnd app='auditor.exe' cls='#32770' title='Salvar como' /&gt;&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenApplication.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OpenApplication>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="438,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;As evidências para a demanda: &quot; + var_numeroDemanda + &quot; foram geradas com sucesso!!&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MessageBox>
+  </Sequence>
+</Activity>

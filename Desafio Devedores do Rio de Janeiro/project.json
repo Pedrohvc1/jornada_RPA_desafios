@@ -1,0 +1,58 @@
+{
+  "name": "Desafio Devedores do Rio de Janeiro",
+  "description": "Você deve criar um workflow que seja capaz de:\r\n\r\nAcessar o site de CRM por esse LINK, realizando o Login com a seguinte credencial:\r\nUsuário: aluno\r\nSenha: desafiosrpa\r\nPreencher o terceiro campo do Login com o resultado do cálculo da expressão apresentada pelo site.\r\nExtrair os dados dos clientes que:\r\nQue possuem pagamentos pendentes (Faturamento->Pagamentos)\r\nSejam do estado do Rio de Janeiro (Cadastros->Clientes)\r\nEsses dados devem ser gravados em um arquivo separado por virgula (.csv)",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.1]",
+    "UiPath.System.Activities": "[22.4.1]",
+    "UiPath.UIAutomation.Activities": "[22.4.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.1.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "b5d7d23f-ee52-45e9-8d35-f58b1eeb06b5",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

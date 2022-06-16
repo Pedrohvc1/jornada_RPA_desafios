@@ -1,0 +1,58 @@
+{
+  "name": "Desafio Compras",
+  "description": "Você deve criar um robô RPA que seja capaz de:\r\n\r\nPesquisar pelo preço do produto Laptop ABC em dois sites de fornecedores diferentes (link dos sites abaixo):\r\n\r\nhttps://www.desafiosrpa.com.br/desafios_crm-produtos.html\r\nhttps://www.desafiosrpa.com.br/desafios_crm-produtos-ecom.html\r\nDescobrir qual dos fornecedores estão vendendo o Laptop ABC mais barato\r\nComprar o Laptop ABC no site que estiver com o preço mais barato.\r\nCopiar o Numero e o Valor da Fatura.\r\nGravar essas informações em uma plani",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.1]",
+    "UiPath.System.Activities": "[22.4.1]",
+    "UiPath.UIAutomation.Activities": "[22.4.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.1.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "12b7b02d-e57a-4460-bdf0-ecf7bb19f798",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
